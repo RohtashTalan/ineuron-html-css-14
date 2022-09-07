@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Montserrat+Alternates:wght@400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+html {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  background-color: #e8e8e6;
+  color: #696868;
+
+}
+
+.ham-menu, .logo-mobile{
+  display: none;
+}
+
+.container {
+  display: flex;
+}
+.nav-container {
+  padding-top: 2rem;
+}
+.left-container {
+  flex: 1;
+  background-image: url(./assets/pexels-rfstudio-3819572.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.logo{
+  padding: 0 0 0 5rem;
+}
+
+.nav-left-container {
+  width: 30%;
+}
+
+.right-container {
+  width: 70%;
+  padding: 0 5rem 0 1rem;
+}
+
+.list-items {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  list-style: none;
+}
+
+.list-item {
+  margin-left: 3rem;
+  font-size: 1.3rem;
+}
+
+.creativity {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.heading-text-1 {
+  font-family: 'Londrina Outline', cursive;
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.heading-part-2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  color: #696868;
+}
+.heading-text-2{
+  font-size: 8rem;
+}
+
+.tagline-text{
+  font-size: 3rem;
+}
+
+.social-icons{
+  position: absolute;
+  right: 5rem;
+  top: 10%;
+  list-style: none;
+}
+.social-icon{
+  margin-top: 3rem;
+}
+.social-icon img{
+  height: 1rem;
+}
+.package-btn{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2rem;
+}
+.hero-btn{
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: #3c3c3c;
+  color: #fff;
+}
+
+.right-bottom{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.service-lists{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  list-style: none;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+.service-list{
+  margin-bottom: -9px;
+}
+.service-list::before{
+  content: "\2B24";
+    font-size: 0.5rem;
+    color: #00000080;
+    margin-right: 8px;
+}
+.service-list::after{
+  content: '';
+  height: 3rem;
+  width: 0.1rem;
+  display: block;
+  background-color: #000;
+  margin: -4px 0 0 2.5px;
+}
+.block-image{
+  width: 30rem;
+}
+.quote-img{
+  font-size: 5rem;
+  margin-bottom: -3rem;
+}
+.block-image blockquote{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+  
+.dance-img{
+  width: 36rem;
+}
+
+ .down-arrow{
+  /* position: absolute; */
+  /* right: 5rem;
+  bottom: 1rem; */
+}
+.arrow-img{
+  position: absolute;
+  right: 5rem;
+  height: 3rem;
+  bottom: 1rem;
+}
+
+@media screen and (max-width:950px) {
+  .right-bottom{
+    flex-direction: column;
+    align-items: center;
+  }
+  .arrow-img{
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width:800px) {
+  .social-icons{
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  .social-icon{
+    margin-left: 2rem;
+  }
+  .social-icon img{
+    height: 1rem;
+  }
+  .creativity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tagline-text{
+    font-size: 1rem;
+  }
+
+}
+@media screen and (max-width:650px) {
+  .social-icons{
+    display: none;
+  }
+  .creativity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tagline-text{
+    font-size: 1rem;
+  }
+  .list-items{display: none;}
+  .ham-menu{
+    display: block;
+    width: 2rem;
+    float: right;
+    margin-right: -5rem;
+  }
+
+}
+@media screen and (max-width:450px) {
+.left-container{
+  display: none;
+}
+.logo-mobile{
+  position: absolute;
+  left: 1rem;
+  height: 2rem;
+}
+.creativity{
+  margin-top: 4rem;
+}
+.block-image{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.block-image blockquote{
+  font-size: 1rem;
+}
+.dance-img{
+  width: 100%;
+  align-items: center;
+}
+
+}
